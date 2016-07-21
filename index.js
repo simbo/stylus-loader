@@ -29,6 +29,9 @@ module.exports = function(source) {
   options.include = options.include || stylusOptions.include || [];
   options.set = options.set || stylusOptions.set || {};
   options.define = options.define || stylusOptions.define || {};
+  options.url = options.url || stylusOptions.url || false;
+  options['include css'] = options['include css'] || stylusOptions['include css'] || false;
+  options.paths = options.paths || stylusOptions.paths || [];
 
   if (options.sourceMap != null) {
     options.sourcemap = options.sourceMap;
